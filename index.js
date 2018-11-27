@@ -11,7 +11,7 @@ var OxfordDictionary = function(app_id,app_key) {
   
     OxfordDictionary.prototype.find = function(word,cb){
         var options = {
-            host :  'od-api.oxforddictionaries.com',
+            host :  'cors-anywhere.herokuapp.com/od-api.oxforddictionaries.com',
             port : 443,
             path : '/api/v1/entries/en/'+word,
             method : 'GET',
